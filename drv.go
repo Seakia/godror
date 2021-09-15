@@ -673,8 +673,8 @@ func (d *drv) getPool(P commonAndPoolParams) (*connPool, error) {
 	if ok {
 		return pool, nil
 	}
-	d.mu.RLock()
-	defer d.mu.RUnlock()
+	d.mu.Lock()
+	defer d.mu.Unlock()
 	if pool, ok = d.pools[poolKey]; ok {
 		return pool, nil
 	}
