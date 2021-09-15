@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	godror "github.com/godror/godror"
+	godror "github.com/Seakia/godror"
 )
 
 func Test119GetTables(t *testing.T) {

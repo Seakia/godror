@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	godror "github.com/godror/godror"
+	godror "github.com/Seakia/godror"
 )
 
 var flagAlloc133 = flag.String("alloc133", "alloc133.txt", "file to write alloc info")

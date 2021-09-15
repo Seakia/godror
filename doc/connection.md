@@ -24,7 +24,7 @@ db, err := sql.Open("godror", `user="scott" password="tiger"
 ```
 
 All [godror
-parameters](https://pkg.go.dev/github.com/godror/godror?tab=doc#pkg-overview)
+parameters](https://pkg.go.dev/github.com/Seakia/godror?tab=doc#pkg-overview)
 should also be logfmt-ted.
 
 You can provide all possible options with `ConnectionParams`:

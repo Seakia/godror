@@ -5,7 +5,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/godror/godror/sid"
+	"github.com/Seakia/godror/sid"
 )
 
 func TestParseDescription(t *testing.T) {

@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	godror "github.com/godror/godror"
+	godror "github.com/Seakia/godror"
 )
 
 func TestReadLargeLOB(t *testing.T) {

@@ -287,7 +287,7 @@ func (r *rows) Next(dest []driver.Value) error {
 	defer runtime.UnlockOSThread()
 
 	if r.fetched == 0 {
-		// Start the watchdog only once See issue #113 (https://github.com/godror/godror/issues/113)
+		// Start the watchdog only once See issue #113 (https://github.com/Seakia/godror/issues/113)
 		if r.done == nil {
 			if ctx := r.statement.ctx; ctx != nil {
 				// nil can be present when Next is issued on cursor returned from DB

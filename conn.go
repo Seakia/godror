@@ -29,7 +29,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/godror/godror/dsn"
+	"github.com/Seakia/godror/dsn"
 )
 
 const getConnection = "--GET_CONNECTION--"
@@ -625,7 +625,7 @@ func calculateTZ(dbTZ, dbOSTZ string, noTZCheck bool) (*time.Location, int, erro
 			if dbI, err := atoi(dbTZ); err == nil {
 				if tzI, err := atoi(dbOSTZ); err == nil && dbI != tzI &&
 					dbI+100 != tzI && tzI+100 != dbI { // Compensate for Daylight Savings
-					fmt.Fprintf(os.Stderr, "godror WARNING: discrepancy between DBTIMEZONE (%q=%d) and SYSTIMESTAMP (%q=%d) - set connection timezone, see https://github.com/godror/godror/blob/master/doc/timezone.md\n", dbTZ, dbI, dbOSTZ, tzI)
+					fmt.Fprintf(os.Stderr, "godror WARNING: discrepancy between DBTIMEZONE (%q=%d) and SYSTIMESTAMP (%q=%d) - set connection timezone, see https://github.com/Seakia/godror/blob/master/doc/timezone.md\n", dbTZ, dbI, dbOSTZ, tzI)
 				}
 			}
 		}
@@ -1049,7 +1049,7 @@ func (c *conn) ResetSession(ctx context.Context) error {
 	//
 	//     ORA-24459: OCISessionGet()
 	//
-	// See https://github.com/godror/godror/issues/57 for example.
+	// See https://github.com/Seakia/godror/issues/57 for example.
 
 	drv.mu.RLock()
 	pool := drv.pools[key]
@@ -1138,7 +1138,7 @@ func (c *conn) IsValid() bool {
 	//
 	//     ORA-24459: OCISessionGet()
 	//
-	// See https://github.com/godror/godror/issues/57 for example.
+	// See https://github.com/Seakia/godror/issues/57 for example.
 	c.mu.Lock()
 	defer c.mu.Unlock()
 	c.closeNotLocking()

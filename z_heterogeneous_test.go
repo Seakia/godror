@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	godror "github.com/godror/godror"
+	godror "github.com/Seakia/godror"
 )
 
 // Following are covered

@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	godror "github.com/godror/godror"
+	godror "github.com/Seakia/godror"
 	"github.com/google/go-cmp/cmp"
 )
 

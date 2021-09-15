@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"testing"
 
-	godror "github.com/godror/godror"
+	godror "github.com/Seakia/godror"
 )
 
 func TestQRCN(t *testing.T) {

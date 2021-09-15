@@ -32,8 +32,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/sync/errgroup"
 
-	godror "github.com/godror/godror"
-	"github.com/godror/godror/dsn"
+	godror "github.com/Seakia/godror"
+	"github.com/Seakia/godror/dsn"
 )
 
 var (

@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/godror/godror"
+	"github.com/Seakia/godror"
 )
 
 func BenchmarkSelect113(b *testing.B) {

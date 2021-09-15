@@ -87,7 +87,7 @@ import (
 
 	"github.com/go-logfmt/logfmt"
 
-	"github.com/godror/godror/dsn"
+	"github.com/Seakia/godror/dsn"
 )
 
 const (
